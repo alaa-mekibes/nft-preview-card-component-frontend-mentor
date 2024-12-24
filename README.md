@@ -11,8 +11,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
-
+ 
 ## Overview
 
 ### The challenge
@@ -41,16 +40,10 @@ Users should be able to:
 
 ### What I learned
 
-I have now mastered the use of shadow, and I have learned to add multiple shadows.
+I have now mastered the use of `box-shadow`, and I have learned to add multiple box-shadows.
 
 ```css
 box-shadow:
           0 5px 0px 15px rgb(11, 22, 40),
           0 10px 0px 40px rgba(11, 22, 40, 0.372)
 ```
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
