@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: https://alaa-mekibes.github.io/nft-preview-card-component
+- Live Site URL: https://alaa-mekibes.github.io/nft-preview-card-component-frontend-mentor
 
 ## My process
 
