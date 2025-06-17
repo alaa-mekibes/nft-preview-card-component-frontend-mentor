@@ -1,31 +1,18 @@
-/* Start Variables */
 :root {
     /* Colors */
-
         /* Primary */
-
 --Soft-blue: hsl(215, 51%, 70%);
 --Cyan: hsl(178, 100%, 50%);
-
         /* Neutral */
-
 --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
 --Very-dark-blue-card-BG: hsl(215, 51%, 16%);
 --Very-dark-blue-line: hsl(215, 32%, 27%);
 --White: hsl(0, 0%, 100%);
-
     /* Typography */
-
-        /* Body Copy */
-
 --size-paragraph: 16px;
-
-        /* Animation */
-
 --delay: .2s
 }
-/* End Variables */
-/* Start Globals Ruls */
+/* Globals Ruls */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -39,18 +26,17 @@ body {
     justify-content: center;
     align-items: center
 }
-/* End Globals Ruls */
 /* Start Box */
-main {
+.main_container {
     background-color: var(--Very-dark-blue-card-BG);
-    padding: 20px;
-    flex-basis: 300px;
+    padding: 1.25rem;
+    flex-basis: 18.75rem;
     border-radius: 20px;
     box-shadow:
                 0 5px 0px 15px rgb(11, 22, 40),
                 0 10px 0px 40px rgba(11, 22, 40, 0.372)
 }
-main .image {
+.image {
     display: flex;
     justify-content: center;
     transition: var(--delay);
@@ -58,7 +44,7 @@ main .image {
     z-index: 1;
     cursor: pointer
 }
-main .image::before {
+.image::before {
     content:'';
     position: absolute;
     left: 0;
@@ -69,10 +55,10 @@ main .image::before {
     opacity: 0;
     transition: opacity var(--delay)
 }
-main .image:hover::before {
+.image:hover::before {
     opacity: .4
 }
-main .image::after {
+.image::after {
     content:'';
     position: absolute;
     background-image: url(images/icon-view.svg);
@@ -81,85 +67,85 @@ main .image::after {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     opacity: 0;
     transition: opacity var(--delay)
 }
-main .image:hover::after {
+.image:hover::after {
     opacity: 1
 }
-main .image img {
+.image img {
     max-width: 100%;
     border-radius: 10px
 }
-main .text h1 {
-    font-size: 20px;
+.text h1 {
+    font-size: 1.25rem;
     font-weight: 600;
     color: var(--White);
-    margin-top: 20px;
+    margin-top: 1.25rem;
     cursor: pointer
 }
-main .text h1:hover {
+.text h1:hover {
     color: var(--Cyan)
 }
-main .text p {
+.text p {
     font-size: var(--size-paragraph);
     font-weight: 300;
     line-height: 1.6;
     color: var(--Soft-blue);
-    margin: 15px auto
+    margin: 0.938rem auto
 }
-main .info {
+.info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--Very-dark-blue-line);
-    padding-bottom: 20px
+    padding-bottom: 1.25rem
 }
-main .info img {
-    margin-right: 5px
+.info img {
+    margin-right: 0.313rem
 }
-main .info .left {
+.left {
     display: flex;
     align-items: center
 }
-main .info .left span {
+.left span {
     color: var(--Cyan);
     font-weight: 600;
     font-size: var(--size-paragraph)
 }
-main .info .right {
+.right {
     display: flex;
     align-items: center
 }
-main .info .right span {
+.right span {
     color: var(--Soft-blue);
     font-size: var(--size-paragraph);
 }
-main .copyright {
-    margin-top: 15px;
+.copyright {
+    margin-top: 0.938rem;
     display: flex;
     align-items: center;
-    gap: 15px
+    gap: 0.938rem
 }
-main .copyright .myImage img {
+.myImage img {
     border-radius: 50%;
-    max-width: 30px;
+    max-width: 1.875rem;
     border: 1px solid var(--White)
 }
-main .copyright p {
+.copyright p {
     font-size: var(--size-paragraph);
     font-weight: 300;
     color: var(--Soft-blue)
 }
-main .copyright p a {
+.copyright p a {
     font-weight: 400;
     text-decoration: none;
     color: var(--White);
     transition: var(--delay)
 }
-main .copyright p a:hover {
+.copyright p a:hover {
     color: var(--Cyan)
 }
 /* End Box */
