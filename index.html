@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>NFT preview card component</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,31 +12,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-            <div class="image">
+    <main class="main_container">
+            <figure class="image">
                 <img src="images/image-equilibrium.jpg" alt="equilibrium">
-            </div>
-            <div class="text">
+            </figure>
+            <article class="text">
                 <h1>Equilibrium #3429</h1>
                 <p>Our Equilibrium collection promotes
                     balance and calm.</p>
-            </div>
-            <div class="info">
+            </article>
+            <article aria-label="number of etherium and time" class="info">
                 <div class="left">
-                    <img src="images/icon-ethereum.svg" alt="icon ethereum">
+                    <img aria-hidden="true" src="images/icon-ethereum.svg">
                     <span>0.041 ETH</span>
                 </div>
                 <div class="right">
-                    <img src="images/icon-clock.svg" alt="icon clock">
+                    <img aria-hidden="true" src="images/icon-clock.svg">
                     <span>3 days left</span>
                 </div>
-            </div>
-            <div class="copyright">
+            </article>
+            <article class="copyright">
                 <div class="myImage">
-                    <img src="images/Alaa-Mekibes.jpg" alt="My Picture">
+                    <img src="images/Alaa-Mekibes.jpg" alt="user profile picture">
                 </div>
                 <p>Creation of <a href="https://github.com/alaa-mekibes">Alaa Mekibes</a></p>
-            </div>
+            </article>
     </main>
 </body>
 </html>
